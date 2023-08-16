@@ -32,7 +32,7 @@
 .ImagenEstelaTour{
     display: block;
     margin:0 auto;
-    width:60%;
+    width:50%;
     text-align: center;
     max-width:600px;
 }
@@ -111,6 +111,7 @@ flex-basis: 15%;
     flex-basis: 40%;
     transition: 0.3s;
     width: 190px;
+    color:#000;
 }
 
 .FechaVenta button:hover{ 
