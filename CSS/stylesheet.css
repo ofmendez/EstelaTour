@@ -1,6 +1,6 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&display=swap');
 
 * {
     margin: 0;
@@ -52,7 +52,7 @@ font-size:70px;
 }
 
 .CamposFechasConciertos{
-    max-width: 650px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -79,13 +79,15 @@ font-size:70px;
 font-family: 'Bakbak One', cursive;
 color:#fff;
 flex-basis: 15%;
+letter-spacing: 1.3px;
 }
 
 .LugarConcierto{
     text-align: left;
     color:#d3d3d3;
-    font-weight: 900;
+    font-weight: 800;
     flex-basis: 40%;
+    font-size: 20px;
 }
 
 @media (max-width:768px){
@@ -102,7 +104,7 @@ flex-basis: 15%;
 }
 
 .BotonConcierto button{   
-    font-size:20px;
+    font-size:18px;
     font-weight: 700;
     background-color: #fff;
     border-radius: 10px;
