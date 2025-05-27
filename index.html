@@ -1,55 +1,1396 @@
 <!DOCTYPE html>
 <html lang="es-CO">
    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <title>Mora | Lo mismo de siempre</title>
-      <meta property="og:site_name" content="Mora | Lo mismo de siempre" />
-      <meta name="twitter:title" content="Mora | Lo mismo de siempre" />
-      <meta property="og:title" content="Mora | Lo mismo de siempre"/>
-      <meta name="Description" content="Lo mismo de siempre.">
-      <meta property="og:description" content="Lo mismo de siempre."/>
-      <meta name="twitter:description" content="Lo mismo de siempre." />
-      <link rel="canonical" href="https://moratour.com/" />
-      <meta property=”og:url” content="https://moratour.com/" />
-      <meta name="twitter:url" content="https://moratour.com/" />
-      <meta property=”og:image” content="https://moratour.com/Images/RimasNation.png" />
-      <meta name="twitter:image" content="https://moratour.com/Images/RimasNation.png" />
-      <meta property="og:type" content="website" />
+  <!-- ========== METADATOS BÁSICOS ========== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mora | Lo mismo de siempre</title>
+  <meta name="description" content="Lo mismo de siempre.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://moratour.com/">
 
-      <meta name="robots" content="index,follow">
+  <!-- ========== SEO SOCIAL: OPEN GRAPH ========== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mora | Lo mismo de siempre">
+  <meta property="og:title" content="Mora | Lo mismo de siempre">
+  <meta property="og:description" content="Lo mismo de siempre.">
+  <meta property="og:url" content="https://moratour.com/">
+  <meta property="og:image" content="https://moratour.com/Images/RimasNation.png">
 
-      <link rel="stylesheet" href="../CSS/stylesheet03.css">
-      <link rel="icon" type="image/x-icon" href="../Images/RimasNation.png">
-      <meta name="view-transition" content="same-origin" />
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <meta http-equiv="Expires" content="0" />
+  <!-- ========== SEO SOCIAL: TWITTER CARDS ========== -->
+  <meta name="twitter:title" content="Mora | Lo mismo de siempre">
+  <meta name="twitter:description" content="Lo mismo de siempre.">
+  <meta name="twitter:url" content="https://moratour.com/">
+  <meta name="twitter:image" content="https://moratour.com/Images/RimasNation.png">
+  <meta name="twitter:card" content="summary_large_image"> <!-- Sugerido para mejor preview -->
 
-      <meta name="google-site-verification" content="G98-Wxd-8wpP_oI9ij-UQ9e3Qti--7eINlYkwQhpwjU" />
+  <!-- ========== FAVICON Y ESTILOS ========== -->
+  <link rel="icon" type="image/png" href="../Images/RimasNation.png"> <!-- Mejor usar PNG por compatibilidad -->
+  <link rel="stylesheet" href="../CSS/stylesheet04.css">
 
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-54W93TFKMS"></script>
+  <!-- ========== PERFORMANCE Y TRANSICIONES ========== -->
+  <meta name="view-transition" content="same-origin"> <!-- Transiciones visuales (Chrome 111+) -->
+
+  <!-- ========== CACHE CONTROL ========== -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- ========== GOOGLE SITE VERIFICATION ========== -->
+  <meta name="google-site-verification" content="G98-Wxd-8wpP_oI9ij-UQ9e3Qti--7eINlYkwQhpwjU">
+
+  <!-- ========== GOOGLE ANALYTICS ========== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54W93TFKMS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-54W93TFKMS');
+  </script>
+
+  <!-- ========== Meta Pixel Code ========== -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '624602214908527');
+fbq('track', 'PageView');
 
-  gtag('config', 'G-54W93TFKMS');
+// Track any click on the page
+document.addEventListener('click', function(e) {
+  fbq('trackCustom', 'ClickAnywhere', {
+    tag: e.target.tagName,
+    id: e.target.id || null,
+    classes: e.target.className || null,
+    text: e.target.innerText ? e.target.innerText.substring(0, 100) : null
+  });
+});
 </script>
-      <style>
-         html, body {
-            flex-direction: column;
-         }
-      </style>
-   </head>
-   <body>
-      
-      <h1>LO MISMO DE LA OTRA VEZ</h1>
-<h2>27/05/2025</h2>
-<h2>10:00am PR</h2>
 
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=624602214908527&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+  <!-- ========== Structured Data (JSON-LD) ========== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-03",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Bazar del Sábado",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tegucigalpa",
+          "addressCountry": "Honduras"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-04",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Complejo Cuscatlán",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Salvador",
+          "addressCountry": "El Salvador"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-05",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Cayalá",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ciudad De Guatemala",
+          "addressCountry": "Guatemala"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-10",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Polideportivo Alexis Arguello",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Managua",
+          "addressCountry": "Nicaragua"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-13",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Centro De Eventos Pedregal",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San José",
+          "addressCountry": "Costa Rica"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-26",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Costa 21",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lima",
+          "addressCountry": "Perú"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.teleticket.com.pe/mora-2025",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-30",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Coliseo Ruminahui",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Quito",
+          "addressCountry": "Ecuador"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketshow.com.ec/evento/Mora-en-Quito-Quito",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-07-31",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Explanada Output",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Guayaquil",
+          "addressCountry": "Ecuador"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketshow.com.ec/evento/Mora-en-Guayaquil-Guayaquil",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-08-02",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Movistar Arena",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bogotá",
+          "addressCountry": "Colombia"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://tuboleta.com/es/eventos/mora-lo-mismo-de-la-otra-vez-tour",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-08-14",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Asunción",
+          "addressCountry": "Paraguay"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-08-16",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Movistar Arena",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressCountry": "Argentina"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-08-22",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Arena Guadalajara",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Guadalajara",
+          "addressCountry": "Mexico"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com.mx/event/3D0062B3D32F3C07?did=fans",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+     {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-08-29",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Palacio de los Deportes",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ciudad de México",
+          "addressCountry": "Mexico"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com.mx/event/140062B7EECA3A3D?did=fans",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },{
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-09-03",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Arena Monterrey",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Monterrey",
+          "addressCountry": "Mexico"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://web2.superboletos.com/SuperBoletos/landing-evento?event_id=PkidnZ184H8iT4zhzMNqhQ",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-09-23",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Palau St Jordi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-09-26",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Palmetum",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tenerife",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-09-27",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Marenostrum",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Malaga",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-09-28",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Plaza De Toros",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Granada",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-03",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Miribilla",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bilbao",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-04",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Marina Sur",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Valencia",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-05",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Plaza De Toros",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Murcia",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-09",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Coliseo",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "La Coruña",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-10",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Movistar Arena",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "España"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },{
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-25",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Ovalo Feria Ganadera",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santo Domingo",
+          "addressCountry": "República Dominicana"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-10-30",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Arizon Federal Theatre",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Phoenix",
+          "addressCountry": "Arizona"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-02",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Cal Coast Union Theatre",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Diego",
+          "addressCountry": "California"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/0A0062B6997431D5",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-04",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Youtube Theatre",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Los Angeles",
+          "addressCountry": "California"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/0A0062B6D6164E68",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-09",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Fox Theatre",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oakland",
+          "addressCountry": "California"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/1C0062B6F2475F48?camefrom=CFC_ANOTHERPLANET_artist&brand=anotherplanet",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },{
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-20",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Smart Financial Centre Sugar",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Houston",
+          "addressCountry": "Texas"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://smartfinancialcentre.net/events/mora/calendar/",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },{
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-22",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "The Pavilion at Toyota Music Factory",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dallas",
+          "addressCountry": "Texas"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/0C0062B7951E1E65",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },{
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-23",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Boeing Center at Tech Port",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Antonio",
+          "addressCountry": "Texas"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.etix.com/ticket/p/81705163/moralo-milsmo-de-la-otra-vez-tour-2025-san-antonio-boeing-center-at-tech-port",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-26",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Rosemont Theater",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chicago",
+          "addressCountry": "Illinois"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/070062B6E7AA2983",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-29",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Theater @ Madison Square Garden",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "New York",
+          "addressCountry": "New York"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/3B0062B7CFAE18A4",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-11-30",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Agganis Arena",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Boston",
+          "addressCountry": "Massachusetts"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/010062B78DD92F57",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-12-03",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Coca Cola Roxy",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Atlanta",
+          "addressCountry": "Georgia"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/0E0062B6D0084F90",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },{
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-12-04",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Kia Center",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Orlando",
+          "addressCountry": "Florida"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/220062BA6F550B05",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-12-07",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Kaseya Center",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Miami",
+          "addressCountry": "Florida"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketmaster.com/event/0D0062B7817B1066",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-12-12",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Estadio Bicentenario La Florida",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santiago",
+          "addressCountry": "Chile"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-12-19",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Coliseo de Puerto Rico José Miguel Agrelot",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Juan",
+          "addressCountry": "Puerto Rico"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketera.com/events/detail/mora#tickets",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    },
+     {
+      "@type": "MusicEvent",
+      "name": "Mora - Lo mismo de siempre Tour",
+      "startDate": "2025-12-20",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Coliseo de Puerto Rico José Miguel Agrelot",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Juan",
+          "addressCountry": "Puerto Rico"
+        }
+      },
+      "image": "https://moratour.com/Images/RimasNation.png",
+      "description": "Concierto en vivo de Mora como parte de su gira 'Lo mismo de siempre'.",
+      "url": "https://www.ticketera.com/events/detail/mora#tickets",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Mora",
+        "sameAs": "https://www.instagram.com/mora/"
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+   <body>
+      <div class="BannerDesktop"><img src="Images/LMDS_Banner.webp" /></div>
+      <div class="BannerMovil"><img src="Images/LMDS_BannerMovil.webp" /></div>
+      <div class="ContenedorGeneral">
+
+        <div class="PreSaleContainer"> <p class="PresaleCode">Pre-sale code: UNDOLAR</p></div>
+         <!-- Inicio Fechas -->
+        
+         <!-- Inicio Latam -->
+
+            <div class="ContenedorRegion">
+               
+               <div class="ContenedorFechas">
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 03</div>
+                     <div class="CiudadConcierto">Tegucigalpa, Honduras</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 04</div>
+                     <div class="CiudadConcierto">San Salvador, El Salvador</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 05</div>
+                     <div class="CiudadConcierto">Ciudad de Guatemala, Guatemala</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 10</div>
+                     <div class="CiudadConcierto">Ciudad de Panamá, Panamá</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 12</div>
+                     <div class="CiudadConcierto">Managua, Nicaragua</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 13</div>
+                     <div class="CiudadConcierto">San José, Costa Rica</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 26</div>
+                     <div class="CiudadConcierto">Lima, Perú</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.teleticket.com.pe/mora-2025" target="_blank" data-nombre="Lima"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 30</div>
+                     <div class="CiudadConcierto">Quito, Ecuador</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketshow.com.ec/evento/Mora-en-Quito-Quito" target="_blank" data-nombre="Quito"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">JUL 31</div>
+                     <div class="CiudadConcierto">Guayaquil, Ecuador</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketshow.com.ec/evento/Mora-en-Guayaquil-Guayaquil" target="_blank" data-nombre="Guayaquil"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">AUG 02</div>
+                     <div class="CiudadConcierto">Bogotá, Colombia</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://tuboleta.com/es/eventos/mora-lo-mismo-de-la-otra-vez-tour" target="_blank" data-nombre="Bogotá"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                   <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">AUG 14</div>
+                     <div class="CiudadConcierto">Asunción, Paraguay</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">AUG 16</div>
+                     <div class="CiudadConcierto">Buenos Aires, Argentina</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">AUG 22</div>
+                     <div class="CiudadConcierto">Guadalajara, México</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com.mx/event/3D0062B3D32F3C07?did=fans" target="_blank" data-nombre="Guadalajara"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">AUG 29</div>
+                     <div class="CiudadConcierto">Ciudad de México, México</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com.mx/event/140062B7EECA3A3D?did=fans" target="_blank" data-nombre="CiudadMexico"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">SEP 03</div>
+                     <div class="CiudadConcierto">Monterrey, México</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://web2.superboletos.com/SuperBoletos/landing-evento?event_id=PkidnZ184H8iT4zhzMNqhQ" target="_blank" data-nombre="Monterrey"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                   <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">SEP 23</div>
+                     <div class="CiudadConcierto">Barcelona, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">SEP 26</div>
+                     <div class="CiudadConcierto">Tenerife, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">SEP 27</div>
+                     <div class="CiudadConcierto">Málaga, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">SEP 28</div>
+                     <div class="CiudadConcierto">Granada, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 03</div>
+                     <div class="CiudadConcierto">Bilbao, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 04</div>
+                     <div class="CiudadConcierto">Valencia, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 05</div>
+                     <div class="CiudadConcierto">Murcia, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 09</div>
+                     <div class="CiudadConcierto">La Coruña, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 10</div>
+                     <div class="CiudadConcierto">Madrid, España</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun02.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 25</div>
+                     <div class="CiudadConcierto">Santo Domingo, República Dominicana</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_Jun09.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                   <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">OCT 30</div>
+                     <div class="CiudadConcierto">Phoenix, Arizona</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 02</div>
+                     <div class="CiudadConcierto">San Diego, California</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/0A0062B6997431D5" target="_blank" data-nombre="SanDiego"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 04</div>
+                     <div class="CiudadConcierto">Los Angeles, California</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/0A0062B6D6164E68" target="_blank" data-nombre="LosAngeles"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 09</div>
+                     <div class="CiudadConcierto">Oakland, California</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/1C0062B6F2475F48?camefrom=CFC_ANOTHERPLANET_artist&brand=anotherplanet" target="_blank" data-nombre="Oakland"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 20</div>
+                     <div class="CiudadConcierto">Houston, Texas</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://smartfinancialcentre.net/events/mora/calendar/" target="_blank" data-nombre="Houston"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 22</div>
+                     <div class="CiudadConcierto">Dallas, Texas</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/0C0062B7951E1E65" target="_blank" data-nombre="Dallas"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 23</div>
+                     <div class="CiudadConcierto">San Antonio, Texas</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.etix.com/ticket/p/81705163/moralo-milsmo-de-la-otra-vez-tour-2025-san-antonio-boeing-center-at-tech-port" target="_blank" data-nombre="SanAntonio"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 26</div>
+                     <div class="CiudadConcierto">Chicago, Illinois</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/070062B6E7AA2983" target="_blank" data-nombre="Chicago"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 29</div>
+                     <div class="CiudadConcierto">New York, New York</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/3B0062B7CFAE18A4" target="_blank" data-nombre="NewYork"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                    <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">NOV 30</div>
+                     <div class="CiudadConcierto">Boston, Massachusetts</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/010062B78DD92F57" target="_blank" data-nombre="Boston"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">DEC 03</div>
+                     <div class="CiudadConcierto">Atlanta, Georgia</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/0E0062B6D0084F90" target="_blank" data-nombre="Atlanta"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">DEC 04</div>
+                     <div class="CiudadConcierto">Orlando, Florida</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/220062BA6F550B05" target="_blank" data-nombre="Orlando"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">DEC 07</div>
+                     <div class="CiudadConcierto">Miami, Florida</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketmaster.com/event/0D0062B7817B1066" target="_blank" data-nombre="Miami"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                  <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">DIC 12</div>
+                     <div class="CiudadConcierto">Santiago, Chile</div>
+                     <div class="BotonCompra"><img class="BotonSoon" src="images/LMDS_Btn_May28.svg"/></div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                   <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">DIC 19</div>
+                     <div class="CiudadConcierto">San Juan, Puerto Rico</div>
+                     <div class="BotonCompra"><img src="images/LMDS_Btn_SoldOut.svg"/>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+                   <!-- Inicio Fecha Concierto -->
+                  <div class="FechaConcierto">
+                     <div class="DiaConcierto">DIC 20</div>
+                     <div class="CiudadConcierto">San Juan, Puerto Rico</div>
+                     <div class="BotonCompra"><a class="imagen-enlace" href="https://www.ticketera.com/events/detail/mora#tickets" target="_blank" data-nombre="SanJuan20"><img src="images/LMDS_Btn_OnSale.svg"/></a>
+                     </div>
+                  </div>
+                  <!-- Fin Fecha Concierto -->
+               </div>
+            
+         </div>
+         
+         <div style="height:60px;"></div>
+
+         <div class="BotonRegistrate">
+          <p class="TextoRegistrate">Recibe toda la información de Mora</p>
+          <a class="imagen-enlace" href="https://hola.lomismodesiempre.com" target="_blank" data-nombre="Registrate"><img src="images/LMDS_Btn_Registrate.svg"/></a>
+                     </div>
+
+                     <div style="height:60px;"></div>
+
+<img class="LogosBottom" src="images/LMDS_Logos.webp"/>
+<div style="height:60px;"></div>
+
+      </div>
+      <script>
+         document.querySelectorAll("a.imagen-enlace").forEach(link => {
+           link.addEventListener("click", function() {
+             const nombre = this.getAttribute("data-nombre");
+             gtag('event', 'click_imagen', {
+               'event_category': 'interaccion',
+               'event_label': nombre
+             });
+           });
+         });
+      </script>
    </body>
 </html>
