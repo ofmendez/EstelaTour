@@ -51,13 +51,22 @@
      margin-top: -40px;
 }
 
+.VideosShop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
 .VideoMerch{
     margin: 0 auto;
     display: block;
-    mix-blend-mode: screen;
-    filter: contrast(1.01);
-    margin-top:-18svw;
+    mix-blend-mode: plus-lighter;
+    filter: contrast(1.02);
+    margin-top:-12svw;
+    width:100%;
 }
+
+
 /* Contenedores Fechas */
  .ContenedorEnlacesRegiones{
      display: flex;
