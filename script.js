@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tourDates = [
     {
-      date: "2026-05-12",
+      date: "2026-05-02",
       event: "FESTIVAL LA SOLAR",
       city: "MEDELLÍN,",
       country: "COLOMBIA",
