@@ -9,6 +9,26 @@ document.addEventListener("DOMContentLoaded", () => {
       soldOut: false,
       isNew: false
     },
+
+    {
+      date: "2026-06-27",
+      event: "MAMACITA SOUND FESTIVAL",
+      city: "PARÍS,",
+      country: "FRANCIA",
+      ticketUrl: "https://shotgun.live/es/festivals/mamacita-sound-2026",
+      soldOut: false,
+      isNew: true
+    },
+    {
+      date: "2026-07-03",
+      event: "KOKO",
+      city: "LONDRÉS,",
+      country: "INGLATERRA",
+      ticketUrl: "https://koko.seetickets.com/event/mora/koko/3640461?utm_source=website&utm_medium=event&utm_term=Mora",
+      soldOut: false,
+      isNew: true
+    },
+
     {
       date: "2026-07-04",
       event: "LATINO GANG",
@@ -27,6 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
       soldOut: false,
       isNew: false
     },
+
+    {
+      date: "2026-07-09",
+      event: "MILANO LATIN FESTIVAL",
+      city: "MILÁN,",
+      country: "ITALIA",
+      ticketUrl: "https://www.ticketone.it/event/milano-latin-festival-mind-live-theatre-20985043/",
+      soldOut: false,
+      isNew: true
+    },
+
     {
       date: "2026-07-12",
       event: "ICÓNICA",
