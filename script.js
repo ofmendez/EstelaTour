@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "MEDELLÍN,",
       country: "COLOMBIA",
       ticketUrl: "https://web.tuboleta.com/images/Eventos/La-Solar-2026/home.html",
-      soldOut: false,
+      soldOut: true,
       isNew: false
     },
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event: "LATIN FEST",
       city: "BENIDORM,",
       country: "ESPAÑA",
-      ticketUrl: "https://latinfest.es/benidorm-4-y-5-julio-2026/",
+      ticketUrl: "https://latinfest.janto.es/",
       soldOut: false,
       isNew: false
     },
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event: "LATIN FEST",
       city: "VALENCIA,",
       country: "ESPAÑA",
-      ticketUrl: "https://latinfest.es/latin-fest-2026-18-julio-2026-valencia/#events/1HHY",
+      ticketUrl: "https://latinfest.es/valencia/entradas",
       soldOut: false,
       isNew: false
     }
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createRowMarkup(item) {
     return `
-      <article class="tour-date">
+      <article class="tour-date ${item.soldOut ? "tour-date--sold-out" : ""}">
         <div class="tour-date__date">${formatDisplayDate(item.date)}</div>
         <div class="tour-date__event">${item.event}</div>
         <div class="tour-date__city">${item.city}</div>

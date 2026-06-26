@@ -131,6 +131,24 @@ body {
   display: block;
 }
 
+.tour-date {
+  position: relative;
+}
+
+.tour-date--sold-out::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgb(159, 175, 235);
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+
 /* CELULAR */
 @media (max-width: 768px) {
   .hero {
