@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "PARÍS,",
       country: "FRANCIA",
       ticketUrl: "https://shotgun.live/es/festivals/mamacita-sound-2026",
-      soldOut: false,
+      soldOut: true,
       isNew: true
     },
     {
