@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       country: "INGLATERRA",
       ticketUrl: "https://koko.seetickets.com/event/mora/koko/3640461?utm_source=website&utm_medium=event&utm_term=Mora",
       soldOut: true, 
-      isNew: true
+      isNew: true 
     },
 
     {
