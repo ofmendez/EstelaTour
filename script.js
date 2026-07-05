@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "DEN HAAG,",
       country: "PAISES BAJOS",
       ticketUrl: "https://latinogang.nl/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAQz4VxleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAae1PPj0LVeSuDiOOOPgjkS-YkJAtHugWwURQi-OtRGa8zvMR3Fd80NdvFJ6yw_aem_PnhjKqTOkiLg-NBGrZdNQw",
-      soldOut: false,
+      soldOut: true,
       isNew: false
     },
     {
