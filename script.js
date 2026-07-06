@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "BENIDORM,",
       country: "ESPAÑA",
       ticketUrl: "https://latinfest.janto.es/",
-      soldOut: false,
+      soldOut: true,
       isNew: false
     },
 
