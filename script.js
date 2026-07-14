@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "MILÁN,",
       country: "ITALIA",
       ticketUrl: "https://www.ticketone.it/event/milano-latin-festival-mind-live-theatre-20985043/",
-      soldOut: false,
+      soldOut: true,
       isNew: true
     },
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "SEVILLA,",
       country: "ESPAÑA",
       ticketUrl: "https://iconicafest.com/mora/",
-      soldOut: false,
+      soldOut: true,
       isNew: false
     },
     {
