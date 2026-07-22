@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "MARBELLA,",
       country: "ESPAÑA",
       ticketUrl: "https://entradas.starlitemarbella.com/event/mora-9q2o51?cookie_consent=performance%2Cmarketing&_gl=1*pipdxs*_ga*ODQwOTg3MjQ0LjE3NzQ2NDk5OTk.*_ga_L1HKW5P9TY*czE3NzQ2NDk5OTgkbzEkZzAkdDE3NzQ2NDk5OTgkajYwJGwwJGgw",
-      soldOut: false,
+      soldOut: true,
       isNew: false
     },
     {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       city: "VALENCIA,",
       country: "ESPAÑA",
       ticketUrl: "https://latinfest.es/valencia/entradas",
-      soldOut: false,
+      soldOut: true,
       isNew: false
     }
   ];
